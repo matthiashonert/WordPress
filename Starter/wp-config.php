@@ -16,7 +16,8 @@ define( 'DB_NAME',     'database_name_here' );
 define( 'DB_USER',     'username_here' );
 define( 'DB_PASSWORD', 'password_here' );
 define( 'DB_HOST',     'localhost' );
-define( 'DB_CHARSET',  'utf8mb4' );
+define('DB_CHARSET',   'utf8');
+define('DB_COLLATE',   'utf8_unicode_ci');
 
 
 /* MySQL database table prefix. */
@@ -100,8 +101,8 @@ define('WP_DEFAULT_THEME', 'your-theme');
  * Admin Address and Site Address
  * reduces the number of database queries
  */
-define('WP_HOME', 'https://your-site.com/');
-define('WP_SITEURL', 'https://your-site.com/');
+// define('WP_HOME', 'https://your-site.com/');
+// define('WP_SITEURL', 'https://your-site.com/');
 
 /* Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
